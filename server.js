@@ -10,11 +10,10 @@ app.set("view engine", "ejs");
 app.get("/", function (req, res) {
   var mascots = [
     {
-      name: "Bello",
+      name: "Bello Osagie",
       role: "Stack lead",
       age: 56,
-      email: "bello@gmail.com",
-      gender: "male",
+      email: "belloosagie@gmail.com",
     },
   ];
   var tagline = "Below are our special guests";
@@ -32,9 +31,3 @@ app.get("/contact", function (req, res) {
 
 app.listen(8080);
 console.log("Server is listening on port 8080");
-
-// name
-// email
-// age
-// gender
-// role

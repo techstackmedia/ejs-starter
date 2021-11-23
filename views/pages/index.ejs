@@ -20,24 +20,22 @@
                     alt="">
             </div>
             <div>
-                <h1>Card</h1>
+                <!-- <h1>Card</h1>
                 <p>Welcome to the google event</p>
 
                 <h2>Representatives</h2>
-                <p><%= tagline %></p>
+                <p><%= tagline %></p> -->
 
-                <ul>
+                <div>
                     <% mascots.forEach(function(mascot) { %>
-                    <li>
-                        <div><%= mascot.name %></div>
-                        <div><%= mascot.role %></div>
-                        <div><%= mascot.age %></div>
-                        <div><%= mascot.email %></div>
-                        <div><%= mascot.genger %></div>
-                    </li>
+
+                    <div>Name: <%= mascot.name %></div>
+                    <div>Role<%= mascot.role %></div>
+                    <div>Age: <%= mascot.age %></div>
+                    <div>Email: <%= mascot.email %></div>
                     <% }); %>
 
-                </ul>
+                </div>
             </div>
         </div>
     </main>
