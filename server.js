@@ -9,9 +9,13 @@ app.set("view engine", "ejs");
 // index page
 app.get("/", function (req, res) {
   var mascots = [
-    { name: "Bello", organization: "Decagon", birth_year: 1981 },
-    { name: "Ify", organization: "Google", birth_year: 1991 },
-    { name: "Naheem", organization: "Docker", birth_year: 2013 },
+    {
+      name: "Bello",
+      role: "Stack lead",
+      age: 56,
+      email: "bello@gmail.com",
+      gender: "male",
+    },
   ];
   var tagline = "Below are our special guests";
 

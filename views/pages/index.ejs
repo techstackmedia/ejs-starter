@@ -26,11 +26,14 @@
             <ul>
                 <% mascots.forEach(function(mascot) { %>
                 <li>
-                    <strong><%= mascot.name %></strong>
-                    representing <%= mascot.organization %>,
-                    born <%= mascot.birth_year %>
+                    <div><strong><%= mascot.name %></strong></div>
+                    <div><%= mascot.role %></div>
+                    <div><%= mascot.age %></div>
+                    <div><%= mascot.email %></div>
+                    <div><%= mascot.genger %></div>
                 </li>
                 <% }); %>
+
             </ul>
         </div>
     </main>
