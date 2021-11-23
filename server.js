@@ -14,6 +14,7 @@ app.get("/", function (req, res) {
       role: "Stack lead",
       age: 56,
       email: "belloosagie@gmail.com",
+      gender: "Male",
     },
   ];
   var tagline = "Below are our special guests";
