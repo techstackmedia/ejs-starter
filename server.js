@@ -11,10 +11,9 @@ app.get("/", function (req, res) {
   var mascots = [
     { name: "Bello", organization: "Decagon", birth_year: 1981 },
     { name: "Ify", organization: "Google", birth_year: 1991 },
-    { name: "Moby Dock", organization: "Docker", birth_year: 2013 },
+    { name: "Naheem", organization: "Docker", birth_year: 2013 },
   ];
-  var tagline =
-    "No programming concept is complete without a cute animal mascot.";
+  var tagline = "Below are our special guests";
 
   res.render("pages/index", {
     mascots: mascots,
@@ -23,7 +22,7 @@ app.get("/", function (req, res) {
 });
 
 // about page
-app.get("/about", function (req, res) {
+app.get("/contact", function (req, res) {
   res.render("pages/contact");
 });
 
