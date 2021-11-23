@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+
+        <div class="jumbotron">
+            <img width='80' height='80' style="border-radius: 50%"
+                src="https://www.superprof.ng/images/teachers/teacher-home-name-bello-osagie-write-free-resources-and-create-videos-that-help-thousands-people-successfully-transition-into-web.jpg"
+                alt="">
+            <h1>Card</h1>
+            <p>Welcome to the google event</p>
+
+            <h2>Representatives</h2>
+            <p><%= tagline %></p>
+
+            <ul>
+                <% mascots.forEach(function(mascot) { %>
+                <li>
+                    <strong><%= mascot.name %></strong>
+                    representing <%= mascot.organization %>,
+                    born <%= mascot.birth_year %>
+                </li>
+                <% }); %>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
